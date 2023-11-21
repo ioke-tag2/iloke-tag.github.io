@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<channel>
-<atom:link href="https://news.livedoor.com/rss/topics/top.xml" rel="self" type="application/rss+xml"/>
 <language>ja</language>
-<title>ライブドアニュース - 主要トピックス</title>
-<link>https://news.livedoor.com</link>
-<generator>https://news.livedoor.com</generator>
-<description>ライブドアニュース - 主要トピックス</description>
-<lastBuildDate>Tue, 21 Nov 2023 20:24:29 +0900</lastBuildDate>
-</channel>
+<title>いぉけのサイト</title>
+<link>https://ioke-tag2.github.io/iloke-tag.github.io</link>
+<generator>https://ioke-tag2.github.io/iloke-tag.github.io</generator>
+<description>いぉけの小話</description>
 </xml>
