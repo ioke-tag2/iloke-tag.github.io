@@ -32,6 +32,33 @@ body{
 .p {
   text-align: center;
   }
+    .openButton{
+    width:45px; 
+    height:36px;
+    line-height:40px;
+}
+.openButton a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#F5F5F5;
+    text-align:center;
+    color:#000000;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+}
+.openButton a:hover{
+    background:#D9D9D9;
+    color:#000000;
+    margin-left:0px;
+    margin-top:0px;
+    box-shadow:0px 0px 0px 0px #DEDEDE ;
+}
+
 </style>
 </head>
 <div class="header">
@@ -82,7 +109,23 @@ htmlが得意です。質問OKです！やり方など聞きたいときはお�
     <p>
 <a href="https://b.hatena.ne.jp/entry/s/ioke-tag2.github.io/iloke-tag.github.io/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://ioke-tag2.github.io/iloke-tag.github.io/" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
 <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
-<a href="mailto:?subject=いぉけのサイトスマホ版&Body=https://ioke-tag2.github.io/iloke-tag.github.io/">📱スマホに送る</a><input type="text" value="https://ioke-tag2.github.io/iloke-tag.github.io/" onmouseover="this.select()" readonly /></input>
+<a href="mailto:?subject=いぉけのサイトスマホ版&Body=https://ioke-tag2.github.io/iloke-tag.github.io/">📱スマホに送る</a><div class='openButton'>
+    <a href='#' id="share_button">共有</a>
+</div> 
+<script>
+    const shareButton = document.getElementById('share_button');
+shareButton.addEventListener('click', async () => {
+    try {
+        await navigator.share(
+            {
+                title: document.title,
+                url: "https://ioke-tag2.github.io/iloke-tag.github.io/"
+            });
+    } catch (error) {
+        console.error(error);
+    }
+});
+ </script>
   <div id="fb-root"></div>
     </p>
 <center><small>Copyright &copy; 2023 いぉけ</small></center>
