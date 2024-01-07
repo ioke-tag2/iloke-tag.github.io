@@ -34,7 +34,6 @@ body{
   text-align: center;
   }
 </style>
-<link rel="manifest" href="manifest.json">
 </head>
 <div class="header">
 <center><h2>いぉけのサイト</h2>
@@ -103,15 +102,4 @@ shareButton.addEventListener('click', async () => {
  </script>
   <div id="fb-root"></div>
     </p>
-  <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/color-name/sw.js').then(function(registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-  }
-</script>
 <center><small>Copyright &copy; 2023 いぉけ</small></center>
